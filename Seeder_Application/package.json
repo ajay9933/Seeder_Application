@@ -69,11 +69,15 @@
   "jest": {
     "preset": "ts-jest",
     "testEnvironment": "jsdom",
+    "collectCoverage": true,
+    "coverageDirectory": "coverage",
+    "coverageReporters": [
+      "html",
+      "text",
+      "lcov"
+    ],
     "moduleNameMapper": {
       "\\.(css|scss)$": "identity-obj-proxy"
-    },
-    "setupFilesAfterEnv": [
-      "@testing-library/jest-dom"
-    ]
+    }
   }
 }

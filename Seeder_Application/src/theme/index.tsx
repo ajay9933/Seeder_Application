@@ -1,4 +1,4 @@
-import { createTheme } from '@mui/material/styles';
+import { Components, createTheme } from '@mui/material/styles';
 import '@mui/material/styles';
 
 declare module '@mui/material/styles' {
@@ -25,7 +25,7 @@ declare module '@mui/material/styles' {
       textTransform?: 'none' | 'capitalize' | 'uppercase' | 'lowercase';
     };
   }
-
+  
   interface TypeBackground {
     default: string;
     paper: string;
@@ -123,6 +123,9 @@ declare module '@mui/material/styles' {
     highEmphasis?: string;
     lowEmphasis?: string;
   }
+
+
+  
 }
 
 declare module '@mui/material/Typography' {
@@ -280,6 +283,7 @@ const theme = createTheme({
       },
     },
   },
+ 
   
 });
 

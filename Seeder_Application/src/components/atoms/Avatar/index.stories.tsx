@@ -24,7 +24,7 @@ WithImage.args = {
 
 export const NoImage = Template.bind({});
 NoImage.args = {
-  src: '',  // No image case
+  src: '',  
   alt: 'Avatar with No Image',
 };
 

@@ -4,13 +4,13 @@ import React from 'react'
 
 import theme from "./theme/index";
 import Avatar from "./components/atoms/Avatar/index";
-import CustomChip from "./components/atoms/Chip/index";
+import Chip from '../src/components/atoms/Chip/index'
 
 export default function App() {
   return (
     <ThemeProvider theme={theme}>
      <CssBaseline/>
-      <CustomChip backgroundColor="red" label="hello" fontSize={27.5}/>
+      <Chip label="lopa" customcolor="red" backgroundColor="pink" fontFamily="Arial"lineHeight={200}  />
     </ThemeProvider>
   );
 }
